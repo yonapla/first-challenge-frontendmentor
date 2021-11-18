@@ -1,0 +1,133 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Red Hat Display','sans-serif';
+  min-height: 100vh;
+  background-image: url('../images/pattern-background-desktop.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  max-width: 450px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+}
+
+.card-text-title {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.card-text-description {
+  width: 80%;
+  color: black;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+}
+
+.box-suscription {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  width: 80%;
+}
+
+.box-suscription-left {
+  display: flex;
+  align-items: center;
+}
+
+.box-suscription-left div {
+  margin-left: 20px;
+}
+
+.box-suscription-left div h5{
+  font-weight: 900;
+  font-size: 16px;
+  margin: 0px;
+  color:hsl(223, 47%, 23%);
+}
+
+.box-suscription-left div p {
+  font-size: 16px;
+  color: #8a8a8a;
+  margin: 0px;
+}
+
+.box-suscription a {
+  color:hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.box-suscription a:hover {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+}
+
+a.proceed-btn {
+  width: 80%;
+  display: block;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  font-weight: 900;
+  padding: 20px 0;
+  border-radius: 12px;
+  margin: 30px 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.proceed-btn:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+a.cancel-btn {
+  width: 80%;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 25px;
+  text-decoration: none;
+}
+
+a.cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media(max-width:470px){
+  .card{
+    max-width: 85%;
+  }
+  body {
+    background-image: url('../images/pattern-background-mobile.svg');
+    font-size: 12px;
+  }
+  .card-text-title {
+    font-size: 24px;
+  }
+}
